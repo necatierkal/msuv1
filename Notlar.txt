@@ -1,0 +1,48 @@
+
+
+Angular Kurulum Adımları
+1- https://nodejs.org/en/download adresinden node.js in v.20.13.0 ı indirilip exe çalıştırılarak kurulumları tamamlanmalı
+
+2-Aşağıdaki komutlar sırasıyla  çalıştırılmalıdır. (Varolan bir proje için)
+
+Step 1: npm uninstall -g @angular/cli
+
+Step 2: npm cache clean --force
+
+Step 3: npm install -g @angular/cli@latest
+
+Step 4: npm i
+
+Step 5: ng build
+
+Step 6: ng serve
+
+
+3- Elimizde var olan bir proje olmadığı durumda;
+    Node.js kurulumundan sonra Angular daha önce bilgisayarınızda kurulu değil ise aşağıdaki kodu terminal ekranında çalıştırmalısınız.
+
+                npm install -g @angular/cli@latest
+
+    kurulum tamamlandığında “ng -v” yazarak kurulumu test edebilirsiniz Angular CLI yazısı ekranda belirdiğinde işlem başarı ile tamamlanmış demektir.
+
+    Angular daha önce kurulu ise ve version eski ise silip tekrar yüklemek gerekmektedir. Sırasıyla şu adımlar izlenmelidir.
+
+                npm uninstall -g angular-cli
+                npm uninstall -g @angular/cli
+                npm cache clean
+                npm install -g @angular/cli
+                Terminale “ng -v” yazarak test ettiğinizde Angular Cli sürümünün 6.x.x olduğunu mutlaka görmelisiniz.
+
+    Node ve Angular Cli kurulumları tamamlandıktan sonra yeni bir proje oluşturmak için aşağıdaki kodları sırası ile uygulayalım.
+
+                ng new HelloApp
+                cd HelloApp
+                npm start
+
+    Bu işlemlerden sonra projeniz başlamış demektir. http://localhost:4200 adresine girdiğinizde projenizin içeriğini (HelloApp) göreceksiniz.
+   
+
+    Projenizin Angular sürümünü HelloApp klosörü içerisinde “package.json” dosyası içerisinden kontrol edebilirsiniz.
+
+            
+    Kurulumla ilgili alınan içerik linki : https://medium.com/@mehmeterim/s%C4%B1f%C4%B1rdan-angular-6-2-angular-temel-bilgiler-94626617e384 
