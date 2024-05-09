@@ -46,3 +46,13 @@ Step 6: ng serve
 
             
     Kurulumla ilgili alınan içerik linki : https://medium.com/@mehmeterim/s%C4%B1f%C4%B1rdan-angular-6-2-angular-temel-bilgiler-94626617e384 
+
+
+
+    ----------------------------------------------------------------------------------
+    Kısa notlar:
+    Yeni bir component oluşturmak için 
+
+        ng g c components/book-list 
+        
+    book-list adında bir component oluşturur ve altına css html ts ve spec.ts dosyalarını oluşturur.

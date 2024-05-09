@@ -1,0 +1,29 @@
+
+
+    <table>
+        <thead>
+            <td>#</td>
+            <td>Book Name</td>
+            <td>Author</td>
+            <td>Category</td>
+            <td>Page Count</td>
+        </thead>
+        @for (book of books; track book.id;let index=$index; let count = $count;
+        let firstRecord= $first; let lastRecord=$last; let even=$even;let odd=$odd) {
+          
+            <tr [class.is-even]="even" [class.is-odd]="odd">
+                <td>{{index+1}}</td>
+                <td>{{book.name}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.category}}</td>
+                <td>{{book.pageCount}}</td>
+            </tr>
+        }        
+        @empty{ <!-- eğer dönecek olan boşsa -->
+            <tr>
+                <td class="emptyDataset" colspan="5">Empty Dataset!</td>
+            </tr>
+        }
+    </table>
+    
+ 
