@@ -1,17 +1,21 @@
+<!-- <h1 class="center">{{title}}</h1> -->
+<!-- <h1 >Book Name: {{book?.name}}</h1> -->
+<div class="book">
 <div class="book-card">
     <div class="book-name">
         <!-- {{}}//Angular değişken notasyonu -->
-        {{book.name}}
+        {{book?.name}} / {{pageCount}}
 
-    </div>
+    </div>   
 
-    <div class="book-author">{{book.author}}</div>
+    <div class="book-author">{{book?.author}}</div>
 
     <div class="book-image">
       <img
-        src="{{book.imgUrl}}"
+        src="{{book?.imgUrl}}"
       />
     </div>
 
-    <div class="book-category">{{book.category}}</div>
+    <div class="book-category">{{book?.category}}</div>
   </div>
+</div>

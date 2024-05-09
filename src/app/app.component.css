@@ -1,8 +1,14 @@
-.book{
-    
-   max-width: 500px;
-   margin:50px auto;
-   border: 2px solid #AAA;
-   border-radius: 6px;
-   padding: 10px;
+
+.title{
+   font-size: 60px;
+   font-weight:700;
+   text-align: center;
+
 }
+
+span{font-size:14px;
+   font-style: italic;
+   color: #F00;
+   
+   }
+

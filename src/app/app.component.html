@@ -1,7 +1,9 @@
-<span Welcome></span>
-
+<span Welcome to MSU Angular Project></span>
 <hr />
-<div class="book">
-<app-book-card></app-book-card>
-  
+<h1 class="title">Book Store</h1>
+<div id="divContent">
+  <!-- <input value="" size="" id="" name="" style="" class="" /> -->
+<book-card [pageCount]="book1.pageCount"  [book]="book1"></book-card>
+<book-card [pageCount]="book2.pageCount"  [book]="book2"></book-card>
+<book-card [pageCount]="book3.pageCount"  [book]="book3"></book-card>  
 </div>

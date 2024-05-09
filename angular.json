@@ -61,6 +61,7 @@
             },
             "development": {
               "buildTarget": "msuv1:build:development"
+             
             }
           },
           "defaultConfiguration": "development"
