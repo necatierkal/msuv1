@@ -3,6 +3,9 @@ import { RouterOutlet } from '@angular/router';
 import { BookCardComponent } from "./components/book-card/book-card.component";
 import { BOOKS } from '../db-books';
 import { BookListComponent } from './components/book-list/book-list.component';
+import { HomeComponent } from "./components/home/home.component";
+import { ContactComponent } from "./components/contact/contact.component";
+import { AboutComponent } from "./components/about/about.component";
 
 
 @Component({
@@ -11,7 +14,7 @@ import { BookListComponent } from './components/book-list/book-list.component';
     templateUrl: './app.component.html', //Kullanılan teplate url i
     styleUrl: './app.component.css' //Kullanılan stil urli
     ,
-    imports: [RouterOutlet, BookCardComponent, BookListComponent]
+    imports: [RouterOutlet, BookCardComponent, BookListComponent, HomeComponent, ContactComponent, AboutComponent]
 })
 export class AppComponent { //Bu componentin kullanılabilmesi için export edilmeli. Bu classı import eden diğer tüm bileşenler içerisindeki nesneleri bu sayede kullanabilir.
   title = 'msuv1';

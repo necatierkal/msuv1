@@ -1,0 +1,24 @@
+
+<span>Welcome to MSU Angular Project</span>
+<hr />
+<h1 class="title">Book Store</h1>
+
+<!-- track'i tutulacak id verilmeli,1.döndü,2.döndü olarak sonuç verir. Ne üzerinden döneceğini belritiyor. 
+-->
+<!-- @for (book of books; track book.id;let index = $index) {
+  <div>{{book.name}}</div>
+}  -->
+
+<div id="divContent">
+  <!-- <input value="" size="" id="" name="" style="" class="" /> -->
+  <!-- @for (book of books; track book.id; let index = $index; let count=$count; let firstRecord=$first; let lastRecord=$last) {
+    <book-card [pageCount]="index"  [book]="book"></book-card>
+
+  } -->
+
+<!-- <book-card [pageCount]="book1.pageCount"  [book]="book1"></book-card>
+<book-card [pageCount]="book2.pageCount"  [book]="book2"></book-card>
+<book-card [pageCount]="book3.pageCount"  [book]="book3"></book-card>  buraları kapattık çünkü dögüyle yazdırdık.  -->
+
+<book-list [books]="books"/>
+</div>

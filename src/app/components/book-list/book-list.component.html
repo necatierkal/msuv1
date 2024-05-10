@@ -4,15 +4,22 @@
         <thead>
             <td>#</td>
             <td>Book Name</td>
-            <td>Author</td>
             <td>Category</td>
+            <td>Author</td>
+            <td>Publisher</td>
             <td>Page Count</td>
             <td>Image</td>
         </thead>
         @for (book of books; track book.id;let index=$index; let count = $count;
         let firstRecord= $first; let lastRecord=$last; let even=$even;let odd=$odd) {
           
-            <tr [class.is-even]="even" [class.is-odd]="odd">
+            <!-- <tr [class.is-even]="even" [class.is-odd]="odd"> -->
+                <tr [class.kirmiziKedi]="book.publisher === 'Kırmızı Kedi Yayınları'"
+    [class.iletisim]="book.publisher === 'İletişim Yayınları'"
+    [class.intibak]="book.publisher === 'İntibak Yayınları'"
+    [class.palmeYayin]="book.publisher === 'Palme Yayınları'">
+    <!-- Satır içeriği -->
+
                 <td>{{index+1}}</td>
                
                 <!-- <td [class.span]="book&&book.name !==undefined && book.name.toLowerCase().includes('algorithms')">{{book.name}}</td> -->
@@ -23,8 +30,46 @@
                 @else {
                     <td >{{book.name}}</td>
                 }
+                <td>@switch (book.category) {
+                    @case ("Mathematics") {
+                        "Mathematics Category"
+                    }
+
+                    @case ("Software") {
+                        "Software Category"
+                    }
+
+                    @case ("Market") {
+                        "Market Category"
+                    }
+                    @default {
+                        "Unknown Category"
+                    }
+                                      
+                } </td>
                 <td>{{book.author}}</td>
-                <td>{{book.category}}</td>
+                <td>{{book.publisher}}</td>
+                <!-- @switch (book.publisher) {
+                    @case ("Kırmızı Kedi Yayınları") {
+                        <td class="kirmiziKedi">{{book.publisher}}</td>
+                    }
+                    @case ("İletişim Yayınları") {
+                        <td class="iletisim">{{book.publisher}}</td>
+                    }
+                    @case ("İntibak Yayınları") {
+                        <td class="intibak">{{book.publisher}}</td>
+                    }
+                    @case ("Palme Yayınları") {
+                        <td class="palmeYayin">{{book.publisher}}</td>
+                    }
+                    @case ("Deneme Yayınları") {
+                        <td class="deneme">{{book.publisher}}</td>
+                    }
+                  @default {
+                    <td>{{book.publisher}}</td>
+                  }
+                } -->
+              
                 <!-- <td>{{book.pageCount}}</td> -->
                 <!-- <td [class.span]="book && book.pageCount !== undefined && book.pageCount < 300">{{ book?.pageCount }}</td> -->
                 @if(book.pageCount<300)
