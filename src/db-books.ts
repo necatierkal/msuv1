@@ -143,7 +143,7 @@ export  const BOOKS: any =
     "author": 'Cormen',
     "pageCount": 258,
     "category": 'Mathemetics',
-    "imgUrl": 'https://m.media-amazon.com/images/I/61Pgdn8Ys-L._AC_UF1000,1000_QL80_DpWeblab_.jpg'
+    "imgUrl": ''
 },
 {
     "id":0,

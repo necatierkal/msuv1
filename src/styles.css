@@ -29,3 +29,29 @@ thead{
     background-color: red;
     color: aliceblue;
 }
+.thumbnail{
+    width: 70px;
+}
+/* .red-text {
+    color: red;
+} */
+
+.span{
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+    background-color: red;
+}
+.found{
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+    background-color: red;
+}
+.smallBook{
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+    background-color: red;
+}
+
