@@ -5,11 +5,11 @@ Angular Kurulum Adımları
 
 2-Aşağıdaki komutlar sırasıyla  çalıştırılmalıdır. (Varolan bir proje için)
 
-Step 1: npm uninstall -g @angular/cli
+Step 1: npm uninstall -g @angular/cli 
 
 Step 2: npm cache clean --force
 
-Step 3: npm install -g @angular/cli@latest
+Step 3: npm install -g @angular/cli@latest  ////npm i -g  @angular/cli  aynı anlama geliyo. g harfi globalde çalışacak anlamına gelir. her proje için tek tek kurmaya gerek yok
 
 Step 4: npm i
 
@@ -61,3 +61,6 @@ Step 6: ng serve
     -----https://tailblocks.cc/
     -----https://material.angular.io/
     -----https://tailwindcss.com/ 
+    -----https://angular.dev/tools/cli
+
+
